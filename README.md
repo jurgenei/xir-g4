@@ -1,11 +1,11 @@
-# ast-classes-core
+# xir-g4
 
-[![Build](https://github.com/jurgenei/ast-classes-core/actions/workflows/ci.yml/badge.svg)](https://github.com/jurgenei/ast-classes-core/actions/workflows/ci.yml)
-[![Release](https://github.com/jurgenei/ast-classes-core/actions/workflows/release.yml/badge.svg)](https://github.com/jurgenei/ast-classes-core/actions/workflows/release.yml)
-[![Coverage CI](https://github.com/jurgenei/ast-classes-core/actions/workflows/coverage.yml/badge.svg)](https://github.com/jurgenei/ast-classes-core/actions/workflows/coverage.yml)
-[![CodeQL](https://github.com/jurgenei/ast-classes-core/actions/workflows/codeql.yml/badge.svg)](https://github.com/jurgenei/ast-classes-core/actions/workflows/codeql.yml)
-[![Coverage](https://codecov.io/gh/jurgenei/ast-classes-core/graph/badge.svg?branch=main)](https://codecov.io/gh/jurgenei/ast-classes-core?branch=main)
-[![Maven Central](https://img.shields.io/maven-central/v/name.jurgenei.ast/ast-classes-core.svg)](https://search.maven.org/artifact/name.jurgenei.ast/ast-classes-core)
+[![Build](https://github.com/jurgenei/xir-g4/actions/workflows/ci.yml/badge.svg)](https://github.com/jurgenei/xir-g4/actions/workflows/ci.yml)
+[![Release](https://github.com/jurgenei/xir-g4/actions/workflows/release.yml/badge.svg)](https://github.com/jurgenei/xir-g4/actions/workflows/release.yml)
+[![Coverage CI](https://github.com/jurgenei/xir-g4/actions/workflows/coverage.yml/badge.svg)](https://github.com/jurgenei/xir-g4/actions/workflows/coverage.yml)
+[![CodeQL](https://github.com/jurgenei/xir-g4/actions/workflows/codeql.yml/badge.svg)](https://github.com/jurgenei/xir-g4/actions/workflows/codeql.yml)
+[![Coverage](https://codecov.io/gh/jurgenei/xir-g4/graph/badge.svg?branch=main)](https://codecov.io/gh/jurgenei/xir-g4?branch=main)
+[![Maven Central](https://img.shields.io/maven-central/v/name.jurgenei.ast/xir-g4.svg)](https://search.maven.org/artifact/name.jurgenei.ast/xir-g4)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Java](https://img.shields.io/badge/java-21+-green.svg)](https://www.oracle.com/java/)
 [![Gradle](https://img.shields.io/badge/gradle-9.5+-blue.svg)](https://gradle.org/)
@@ -38,7 +38,7 @@ From `jurgenei/papers/ANTLR_G4_to_AST_Classes_Spec.md`:
 In this workspace, command used:
 
 ```zsh
-/Users/cs79en/Developer/GitHub/gradle/gradle-antlr-plugin/gradlew -p /Users/cs79en/Developer/GitHub/gradle/ast-classes-core test --no-daemon
+/Users/cs79en/Developer/GitHub/gradle/gradle-antlr-plugin/gradlew -p /Users/cs79en/Developer/GitHub/gradle/xir-g4 test --no-daemon
 ```
 
 ## Maven Central publishing
@@ -68,7 +68,7 @@ Build publishable central bundle:
 ## Run tiny demo
 
 ```zsh
-/Users/cs79en/Developer/GitHub/gradle/gradle-antlr-plugin/gradlew -p /Users/cs79en/Developer/GitHub/gradle/ast-classes-core run --no-daemon
+/Users/cs79en/Developer/GitHub/gradle/gradle-antlr-plugin/gradlew -p /Users/cs79en/Developer/GitHub/gradle/xir-g4 run --no-daemon
 ```
 
 Expected output shape:

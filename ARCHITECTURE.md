@@ -1,4 +1,4 @@
-# Architecture Overview ast-classes-core
+# Architecture Overview xir-g4
 
 ```mermaid
 flowchart LR
@@ -40,14 +40,14 @@ node_user -->|"calls"| node_writer
 node_writer -->|"reads"| node_ast_model
 node_writer -->|"renders"| node_sexpr
 
-click node_pipeline "https://github.com/jurgenei/ast-classes-core/blob/main/src/main/java/name/jurgenei/ast/core/AstClassesPipeline.java"
-click node_mapper "https://github.com/jurgenei/ast-classes-core/blob/main/src/main/java/name/jurgenei/ast/core/mapper/ParseTreeToGrammarModelMapper.java"
-click node_grammar_model "https://github.com/jurgenei/ast-classes-core/blob/main/src/main/java/name/jurgenei/ast/core/model/GrammarModel.java"
-click node_grammar_nodes "https://github.com/jurgenei/ast-classes-core/blob/main/src/main/java/name/jurgenei/ast/core/model/GrammarNode.java"
-click node_deriver "https://github.com/jurgenei/ast-classes-core/blob/main/src/main/java/name/jurgenei/ast/core/AstClassDeriver.java"
-click node_cardinality "https://github.com/jurgenei/ast-classes-core/blob/main/src/main/java/name/jurgenei/ast/core/model/Cardinality.java"
-click node_ast_model "https://github.com/jurgenei/ast-classes-core/blob/main/src/main/java/name/jurgenei/ast/core/model/AstModel.java"
-click node_writer "https://github.com/jurgenei/ast-classes-core/blob/main/src/main/java/name/jurgenei/ast/core/AstSexprWriter.java"
+click node_pipeline "https://github.com/jurgenei/xir-g4/blob/main/src/main/java/name/jurgenei/ast/core/AstClassesPipeline.java"
+click node_mapper "https://github.com/jurgenei/xir-g4/blob/main/src/main/java/name/jurgenei/ast/core/mapper/ParseTreeToGrammarModelMapper.java"
+click node_grammar_model "https://github.com/jurgenei/xir-g4/blob/main/src/main/java/name/jurgenei/ast/core/model/GrammarModel.java"
+click node_grammar_nodes "https://github.com/jurgenei/xir-g4/blob/main/src/main/java/name/jurgenei/ast/core/model/GrammarNode.java"
+click node_deriver "https://github.com/jurgenei/xir-g4/blob/main/src/main/java/name/jurgenei/ast/core/AstClassDeriver.java"
+click node_cardinality "https://github.com/jurgenei/xir-g4/blob/main/src/main/java/name/jurgenei/ast/core/model/Cardinality.java"
+click node_ast_model "https://github.com/jurgenei/xir-g4/blob/main/src/main/java/name/jurgenei/ast/core/model/AstModel.java"
+click node_writer "https://github.com/jurgenei/xir-g4/blob/main/src/main/java/name/jurgenei/ast/core/AstSexprWriter.java"
 
 classDef toneNeutral fill:#f8fafc,stroke:#334155,stroke-width:1.5px,color:#0f172a
 classDef toneBlue fill:#dbeafe,stroke:#2563eb,stroke-width:1.5px,color:#172554

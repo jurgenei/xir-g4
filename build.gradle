@@ -15,7 +15,7 @@ plugins {
 group = 'name.jurgenei'
 version = '0.1.0'
 
-def coreArtifactId = 'ast-classes-core'
+def coreArtifactId = 'xir-g4'
 def groupPath = group.toString().replace('.', '/')
 
 java {
@@ -49,9 +49,9 @@ publishing {
             artifactId = coreArtifactId
 
             pom {
-                name = 'ast-classes-core'
+                name = 'xir-g4'
                 description = 'ANTLR grammar-model to AST-classes derivation core library'
-                url = 'https://github.com/jurgenei/ast-classes-core'
+                url = 'https://github.com/jurgenei/xir-g4'
 
                 licenses {
                     license {
@@ -68,9 +68,9 @@ publishing {
                 }
 
                 scm {
-                    connection = 'scm:git:https://github.com/jurgenei/ast-classes-core.git'
-                    developerConnection = 'scm:git:ssh://git@github.com/jurgenei/ast-classes-core.git'
-                    url = 'https://github.com/jurgenei/ast-classes-core'
+                    connection = 'scm:git:https://github.com/jurgenei/xir-g4.git'
+                    developerConnection = 'scm:git:ssh://git@github.com/jurgenei/xir-g4.git'
+                    url = 'https://github.com/jurgenei/xir-g4'
                 }
             }
         }
@@ -242,7 +242,7 @@ def generateCentralBundleChecksums = tasks.register('generateCentralBundleChecks
 
 tasks.register('packageCentralBundle', Zip) {
     dependsOn generateCentralBundleChecksums
-    archiveBaseName = 'ast-classes-core'
+    archiveBaseName = 'xir-g4'
     archiveVersion = project.version.toString()
     archiveClassifier = 'central-bundle'
     destinationDirectory = layout.buildDirectory.dir('central-bundle').get().asFile
