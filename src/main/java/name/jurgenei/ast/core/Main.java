@@ -23,7 +23,6 @@ public final class Main {
         );
 
         final AstModel astModel = new AstClassesPipeline().deriveFromGrammarModel(grammarModel);
-        System.out.println(new AstSexprWriter().write(astModel));
+        System.out.println(new AstXirWriter().write(astModel));
     }
 }
-
