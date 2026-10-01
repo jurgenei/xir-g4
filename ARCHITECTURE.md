@@ -17,8 +17,8 @@ subgraph group_derive["AST Derivation"]
 end
 
 subgraph group_output["Model Output"]
-  node_writer["S-expression writer"]
-  node_sexpr["S-expression text"]
+  node_writer["XIR writer<br/>(xir-sax backed)"]
+  node_xir["XIR text"]
 end
 
 node_user(("Library caller"))
@@ -38,7 +38,7 @@ node_pipeline -->|"returns"| node_ast_model
 node_pipeline -->|"invokes derive"| node_deriver
 node_user -->|"calls"| node_writer
 node_writer -->|"reads"| node_ast_model
-node_writer -->|"renders"| node_sexpr
+node_writer -->|"renders"| node_xir
 
 click node_pipeline "https://github.com/jurgenei/xir-g4/blob/main/src/main/java/name/jurgenei/ast/core/AstClassesPipeline.java"
 click node_mapper "https://github.com/jurgenei/xir-g4/blob/main/src/main/java/name/jurgenei/ast/core/mapper/ParseTreeToGrammarModelMapper.java"
@@ -47,7 +47,7 @@ click node_grammar_nodes "https://github.com/jurgenei/xir-g4/blob/main/src/main/
 click node_deriver "https://github.com/jurgenei/xir-g4/blob/main/src/main/java/name/jurgenei/ast/core/AstClassDeriver.java"
 click node_cardinality "https://github.com/jurgenei/xir-g4/blob/main/src/main/java/name/jurgenei/ast/core/model/Cardinality.java"
 click node_ast_model "https://github.com/jurgenei/xir-g4/blob/main/src/main/java/name/jurgenei/ast/core/model/AstModel.java"
-click node_writer "https://github.com/jurgenei/xir-g4/blob/main/src/main/java/name/jurgenei/ast/core/AstSexprWriter.java"
+click node_writer "https://github.com/jurgenei/xir-g4/blob/main/src/main/java/name/jurgenei/ast/core/AstXirWriter.java"
 
 classDef toneNeutral fill:#f8fafc,stroke:#334155,stroke-width:1.5px,color:#0f172a
 classDef toneBlue fill:#dbeafe,stroke:#2563eb,stroke-width:1.5px,color:#172554
@@ -58,6 +58,6 @@ classDef toneIndigo fill:#e0e7ff,stroke:#4f46e5,stroke-width:1.5px,color:#312e81
 classDef toneTeal fill:#ccfbf1,stroke:#0f766e,stroke-width:1.5px,color:#134e4a
 class node_pipeline,node_mapper,node_grammar_model,node_grammar_nodes toneBlue
 class node_deriver,node_cardinality,node_ast_model toneAmber
-class node_writer,node_sexpr toneMint
+class node_writer,node_xir toneMint
 class node_user,node_parse_tree toneIndigo
 ```

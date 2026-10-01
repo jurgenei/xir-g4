@@ -11,6 +11,7 @@
 [![Gradle](https://img.shields.io/badge/gradle-9.5+-blue.svg)](https://gradle.org/)
 
 ANTLR Grammar -> Model -> AST Classes core library.
+XIR rendering is backed by `name.jurgenei.xir.XirSerializer` (`name.jurgenei:xir-sax`).
 
 Focus v0.1:
 - Java 21
@@ -21,7 +22,7 @@ Focus v0.1:
 ## Architecture
 
 ```text
-ANTLR ParseTree --(ParseTreeToGrammarModelMapper)--> GrammarModel --(AstClassDeriver)--> AstModel --(AstSexprWriter)--> S-Expr text
+ANTLR ParseTree --(ParseTreeToGrammarModelMapper)--> GrammarModel --(AstClassDeriver)--> AstModel --(AstXirWriter)--> XIR text
 ```
 
 ## Implemented derivation rules
@@ -84,4 +85,3 @@ Expected output shape:
 1. Add concrete `ANTLRv4Parser` parse-tree mapper implementation.
 2. Add duplicate-relation dedup and conflict diagnostics.
 3. Add `ref` derivation strategy hooks.
-
