@@ -4,6 +4,8 @@
 [![Release](https://github.com/jurgenei/xir-g4/actions/workflows/release.yml/badge.svg)](https://github.com/jurgenei/xir-g4/actions/workflows/release.yml)
 [![Coverage CI](https://github.com/jurgenei/xir-g4/actions/workflows/coverage.yml/badge.svg)](https://github.com/jurgenei/xir-g4/actions/workflows/coverage.yml)
 [![CodeQL](https://github.com/jurgenei/xir-g4/actions/workflows/codeql.yml/badge.svg)](https://github.com/jurgenei/xir-g4/actions/workflows/codeql.yml)
+[![Dependency Check](https://github.com/jurgenei/xir-g4/actions/workflows/dependency-check.yml/badge.svg)](https://github.com/jurgenei/xir-g4/actions/workflows/dependency-check.yml)
+[![SpotBugs Security](https://github.com/jurgenei/xir-g4/actions/workflows/spotbugs-security.yml/badge.svg)](https://github.com/jurgenei/xir-g4/actions/workflows/spotbugs-security.yml)
 [![Coverage](https://codecov.io/gh/jurgenei/xir-g4/graph/badge.svg?branch=main)](https://codecov.io/gh/jurgenei/xir-g4?branch=main)
 [![Maven Central](https://img.shields.io/maven-central/v/name.jurgenei.ast/xir-g4.svg)](https://search.maven.org/artifact/name.jurgenei.ast/xir-g4)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
