@@ -19,6 +19,18 @@ Focus v0.1:
 - deterministic model output
 - direct parse-tree pipeline entry via mapper interface
 
+## Position in XIR spine
+
+- **Problem solved**: derive structural models from ANTLR grammars with deterministic output.
+- **Relation to XIR**: bridges observation artifacts into derivable XIR model/AST structures.
+- **Why it matters**: connects extraction layer to lineage, governance, and knowledge applications.
+
+```text
+Structured Knowledge -> XIR -> Observation -> Derivation -> Knowledge -> Applications
+```
+
+Next repository in reading path: [example-lineage-plsql](https://github.com/jurgenei/example-lineage-plsql).
+
 ## Architecture
 
 ```text
