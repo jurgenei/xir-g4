@@ -1,4 +1,4 @@
-V=v0.1.0
+V=$(grep -p ^version build.gradle | sed "s/.*['\"]\(.*\)['\"].*/v\1/")
 git tag -d $V || true
 git push origin :refs/tags/$V || true
 git tag $V
